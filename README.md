@@ -10,7 +10,7 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 2. Pick out your favorite [Google Web Fonts](http://www.google.com/webfonts)
 3. Open your function.php file
 4. Save your favorite fonts in an array like so: 
-```php
+``` php
 $customFontFamilies;
 if (class_exists('Google_Font_Collection'))
 {
@@ -24,7 +24,7 @@ if (class_exists('Google_Font_Collection'))
 }
 ```
 5. Create the control
-```php
+``` php
 if (class_exists('Google_Font_Picker_Custom_Control'))
 { 
 	// make sure we have the control included
