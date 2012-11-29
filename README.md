@@ -11,23 +11,23 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 3. Open your function.php file
 4. Save your favorite fonts in an array like so: 
 
-		``` ruby
-		$customFontFamilies;
-		if (class_exists('Google_Font_Collection'))
-		{
-			$fonts[] = array(
-				"title" => "Ubuntu Condensed", 
-				"location" => "Ubuntu+Condensed", 
-				"cssDeclaration" => "'Ubuntu Condensed', sans-serif", 
-				"cssClass" => "ubuntuCondensed"
-			);
-			$customFontFamilies = new Google_Font_Collection($fonts);
-		}
-		``` 
+	``` php
+	$customFontFamilies;
+	if (class_exists('Google_Font_Collection'))
+	{
+		$fonts[] = array(
+			"title" => "Ubuntu Condensed", 
+			"location" => "Ubuntu+Condensed", 
+			"cssDeclaration" => "'Ubuntu Condensed', sans-serif", 
+			"cssClass" => "ubuntuCondensed"
+		);
+		$customFontFamilies = new Google_Font_Collection($fonts);
+	}
+	``` 
 
 5. Create the control
 		
-	``` ruby
+	``` php
 	if (class_exists('Google_Font_Picker_Custom_Control'))
 	{ 
 		// make sure we have the control included
