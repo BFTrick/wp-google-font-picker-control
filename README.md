@@ -8,7 +8,7 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 
 1. Include & activate the plugin
 2. Pick out your favorite [Google Web Fonts](http://www.google.com/webfonts)
-3. Open your function.php file
+3. Open your functions.php file
 4. Save your favorite fonts in an array like so: 
 
 	``` php
@@ -40,3 +40,14 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 		)));
 	}
 	```
+## Results
+
+## FAQ
+
+1. **Can I only add one font to the $fonts array in step 4?**
+
+	No, you can add as many as you like. IMO eight choices looks pretty and gives the user tons of options.
+
+2. **What's up with the class_exists() functions?**
+
+	Those are there so that if you were to ever deactivate or uninstall the plugin that your site wouldn't crash. If you do uninstall the plugin the control will simply not load. There shouldn't be any errors.
