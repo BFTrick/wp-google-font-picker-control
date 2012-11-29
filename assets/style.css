@@ -1,0 +1,17 @@
+.fontPickerCustomControl .fancyDisplay{
+	display: none;
+}
+	.fontPickerCustomControl .fancyDisplay ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+		.fontPickerCustomControl .fancyDisplay ul li{
+			cursor: pointer;
+			float: left;
+			font-size:1.6em;
+			margin: .3em 5% .3em 0;
+			padding: 2% 0;
+			padding-right: 2%;
+			width: 40%;
+		}
