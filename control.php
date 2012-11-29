@@ -48,7 +48,7 @@ class Google_Font_Picker_Custom_Control extends WP_Customize_Control
 					for ($i=0; $i<=$getTotalNumberOfFonts-1; $i++)
 					{
 						?>
-						<li class="<?= $this->fonts->getCssClass($i); ?>">Mulliganz</li>
+						<li class="<?= $this->fonts->getCssClass($i); ?>">WebFonts</li>
 						<?php
 					}
 					?>
