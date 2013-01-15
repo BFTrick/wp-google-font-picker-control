@@ -24,6 +24,10 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 		$customFontFamilies = new Google_Font_Collection($fonts);
 	}
 	``` 
+	**title** - the title you wish the user to see.
+	**location** - the query string on the stylesheet for the google font. If the file name for the font is `http://fonts.googleapis.com/css?family=Ubuntu+Condensed` then the `location` should be `Ubuntu+Condensed`.
+	**cssDeclaration** - the code to be applied to the `font-family` css property. You can keep is the same as Google suggests or you can set up your own fallbacks.
+	**cssClass** - the CSS class for the theme cusomizer. You can create any CSS class you want.
 
 5. Create the control
 		
