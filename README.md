@@ -44,7 +44,7 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 
 ## Results
 
-![screenshot](http://img.photobucket.com/albums/v357/BFTrick/google-web-fonts-plugin-screenshot.png)
+![screenshot](http://img.photobucket.com/albums/v357/BFTrick/Web/google-font-picker-custom-tool-for-wordpress_zps76ece86d.png)
 
 ## FAQ
 
