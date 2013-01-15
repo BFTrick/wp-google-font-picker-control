@@ -42,7 +42,7 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * getTitle
 	 * this function returns the font title
 	**/
 	function getTitle($key)
@@ -51,7 +51,7 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * getLocation
 	 * this function returns the font location
 	**/
 	function getLocation($key)
@@ -60,7 +60,7 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * getCssDeclaration
 	 * this function returns the font css declaration
 	**/
 	function getCssDeclaration($key)
@@ -69,7 +69,7 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * getCssClass
 	 * this function returns the font css class
 	**/
 	function getCssClass($key)
@@ -78,7 +78,22 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * getCssClassArray
+	 * this function returns an array of css classes
+	 * this function is used to send a JS file an array for the postMessage transport option in the theme customizer should you use it
+	**/
+	function getCssClassArray()
+	{
+		$result;
+		foreach ($this->fonts as $key => $value) 
+		{
+			$result[] = $value->__get("cssClass");
+		}
+		return $result;
+	}
+
+	/**
+	 * getTotalNumberOfFonts
 	 * this function returns the total number of fonts
 	**/
 	function getTotalNumberOfFonts()
@@ -87,7 +102,7 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * printThemeCustomizerCssLocations
 	 * this function prints the links to the css files for the theme customizer
 	**/
 	function printThemeCustomizerCssLocations()
@@ -101,7 +116,7 @@ class Google_Font_Collection
 	}
 
 	/**
-	 * Custom Font Class
+	 * printThemeCustomizerCssClasses
 	 * this function prints the theme customizer css classes necessary to display all of the fonts
 	**/
 	function printThemeCustomizerCssClasses()
