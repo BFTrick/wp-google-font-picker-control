@@ -41,17 +41,17 @@ class Google_Font_Picker_Custom_Control extends WP_Customize_Control
 			<select <?php $this->link(); ?>>
 				<?php
 				foreach ( $this->choices as $value => $label )
-					echo '<option value="' . esc_attr( $value ) . '"' . selected( $this->value(), $value, false ) . '>' . $label . '</option>';
+					echo '<option value="' . esc_attr( $label ) . '"' . selected( $this->value(), $value, false ) . '>' . $label . '</option>';
 				?>
 			</select>
 			<div class="fancyDisplay">
 				<ul>
 					<?php
-					$getTotalNumberOfFonts = $this->fonts->getTotalNumberOfFonts();
-					for ($i=0; $i<=$getTotalNumberOfFonts-1; $i++)
+					$cssClassArray = $this->fonts->getCssClassArray();
+					foreach ($cssClassArray as $key => $value)
 					{
 						?>
-						<li class="<?= $this->fonts->getCssClass($i); ?>">WebFonts</li>
+						<li class="<?= $value; ?>">WebFonts</li>
 						<?php
 					}
 					?>

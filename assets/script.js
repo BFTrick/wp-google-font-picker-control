@@ -29,11 +29,12 @@ jQuery(document).ready(function($) {
 				// get index of clicked element
 				var index = $(".fancyDisplay ul li", thisFontPickerCustomControl).index(this);
 				
-				// change the selected option in the select box
-				$('select', thisFontPickerCustomControl).val(index);
+				// unselect all options
+				$('select option', thisFontPickerCustomControl).removeAttr('selected');
 
-				// simulate a change on the select box
-				$("select", thisFontPickerCustomControl).change();
+				// select new element
+				// simulate a change
+				$('select :nth-child('+(index+1)+')', thisFontPickerCustomControl).attr('selected', 'selected').change();
 			});
 
 		});

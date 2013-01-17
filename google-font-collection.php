@@ -23,7 +23,7 @@ class Google_Font_Collection
 		// create fonts
 		foreach ($fonts as $key => $value) 
 		{
-			$this->fonts[] = new Google_Font($value["title"], $value["location"], $value["cssDeclaration"], $value["cssClass"]);
+			$this->fonts[$value["title"]] = new Google_Font($value["title"], $value["location"], $value["cssDeclaration"], $value["cssClass"]);
 		}
 	}
 
@@ -68,26 +68,19 @@ class Google_Font_Collection
 		return $this->fonts[$key]->__get("cssDeclaration");
 	}
 
-	/**
-	 * getCssClass
-	 * this function returns the font css class
-	**/
-	function getCssClass($key)
-	{
-		return $this->fonts[$key]->__get("cssClass");
-	}
 
 	/**
 	 * getCssClassArray
 	 * this function returns an array of css classes
-	 * this function is used to send a JS file an array for the postMessage transport option in the theme customizer should you use it
+	 * this function is used when displaying the fancy list of fonts in the theme customizer
+	 * this function is used to send a JS file an array for the postMessage transport option in the theme customizer
 	**/
 	function getCssClassArray()
 	{
 		$result;
 		foreach ($this->fonts as $key => $value) 
 		{
-			$result[] = $value->__get("cssClass");
+			$result[$value->__get("title")] = $value->__get("cssClass");
 		}
 		return $result;
 	}
