@@ -59,3 +59,13 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 2. **What's up with the class_exists() functions?**
 
 	Those are there so that if you were to ever deactivate or uninstall the plugin that your site wouldn't crash. If you do uninstall the plugin the control will simply not load. There shouldn't be any errors.
+
+## Version
+
+**1.1**
+
+* Updated array select box to save font names instead of array indecies. See issue #1.
+
+**1.0**
+
+* Initial release
