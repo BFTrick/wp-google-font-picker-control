@@ -3,7 +3,7 @@
 Plugin Name: Google Font Picker Control
 Plugin URI:
 Description: This plugin creates a new control in the theme customizer to help users pick Google Web Fonts.
-Version: 1.0
+Version: 1.1
 Author: Patrick Rauland
 Author URI: http://www.patrickrauland.com
 
