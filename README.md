@@ -64,7 +64,7 @@ This WordPress plugin creates a new control type for the [WordPress Theme Custom
 
 **1.1**
 
-* Updated array select box to save font names instead of array indecies. See issue #1.
+* Updated array select box to save font names instead of array indices. See issue #1.
 
 **1.0**
 
